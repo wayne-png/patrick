@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Layout Base</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1b;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #283a7f;
+      padding: 10px 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main.container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .coluna {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    footer {
+      background-color: #283a7f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+ <header>
+    <div style="display: flex; align-items: center;">
+      <img src="https://preview.redd.it/which-official-cs2-logo-do-you-like-better-1-or-2-v0-meakmjcylyqa1.jpg?width=358&format=pjpg&auto=webp&s=7999d040dcab80a7521b44f1d81dd840a7ef7135" width="100" height="100" alt="Logo Counter Strike" class="logo-counter strike" />
+      <h1>Counter Strike 2</h1>
+    </div>
+
+     <nav>
+      <ul>
+        <li><a href="../Index.html">Início</a></li>
+        <li><a href="../Html/Sobre.html">Sobre</a></li>
+        <li><a href="../Html/Galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="Sobre Cs">
+
+<h1>Sobre Counter Strike 2</h1>
+<p>Counter-Strike 2 (CS2) é um jogo de tiro tático em primeira pessoa, desenvolvido e publicado pela Valve, lançado oficialmente em 27 de setembro de 2023 para Windows e Linux. Ele substitui o Counter-Strike: Global Offensive (CS:GO) na Steam como uma atualização gratuita </p>
+<p></p>
+<h1>Principais Características Técnicas</h1>
+<p>Motor Gráfico Source 2: CS2 utiliza o motor gráfico Source 2, proporcionando melhorias significativas em gráficos, iluminação e física</p>
+<p>Arquitetura de Servidor "Sub-tick": Implementa uma arquitetura de servidor "sub-tick", permitindo uma sincronização mais precisa das ações dos jogadores, independentemente da taxa de ticks.
+<p>Granadas de Fumaça Dinâmicas: As granadas de fumaça agora são objetos volumétricos que interagem com o ambiente, reagindo a iluminação, tiros e explosões.</p>
+<h1>Conteúdo e Jogabilidade</h1>
+<p>Modos de Jogo: Mantém os modos clássicos de combate entre Terroristas e Contra-Terroristas, com objetivos como desarmar bombas e resgatar reféns.</p>
+<p>Mapas: Mapas clássicos foram atualizados ou reconstruídos para aproveitar as capacidades do Source 2.</p>
+<p>Sistema de Classificação: Introduz um novo sistema de classificação no modo Premier, com tabelas de líderes globais e regionais.</p>
+<h1>Modos Clássicos Refinados</h1>
+<p>CS2 mantém os modos mais amados da franquia: Desarme de Bomba (Bomb Defusal) e Resgate de Reféns (Hostage Rescue). Cada rodada exige precisão, estratégia e cooperação. Os mapas foram otimizados para garantir equilíbrio competitivo e fluidez no gameplay. </p>
+</p>
+<h1>Sistema Premier e Ranqueamento</h1>
+<p>O modo Premier traz um sistema de matchmaking avançado com pontuação Elo visível, mapas sorteados no estilo competitivo e uma progressão clara no ranking. Ideal para quem busca evolução séria e competitiva dentro do jogo.</p>
+<h1>Armas e Skins</h1>
+<p>CS2 mantém o vasto arsenal conhecido, com rifles, SMGs, pistolas e granadas, cada uma com papel tático específico. Os visuais personalizados, ou skins, estão ainda mais nítidos e bonitos no Source 2, valorizando coleções e trocas entre jogadores. </p>
+<h1>Interface e HUD Modernizados</h1>
+<p>O HUD foi redesenhado com foco em clareza e responsividade. Informações essenciais como dinheiro, munição, tempo e status de equipe são exibidas com visual limpo e intuitivo.</p>
+<h1>Trilha Sonora e Efeitos Sonoros</h1>
+<p>Sons de armas, passos, recargas e ambiente foram completamente refeitos para criar uma ambientação ainda mais realista e tática. A trilha sonora também se adapta dinamicamente à partida, reforçando a tensão e os momentos decisivos.</p>
+<h1>Mapas Reimaginados</h1>
+<p>Locais icônicos como Dust II, Mirage, Nuke, Overpass e outros foram reimaginados com detalhes minuciosos, nova iluminação e texturas melhoradas. O layout permanece fiel ao competitivo, mas com visuais muito mais imersivos.</p>
+<h1>Personalização e Inventário</h1>
+<p>Jogadores podem personalizar armas, agentes e até stickers. O inventário permite gerenciar itens com facilidade, e há espaço para colecionadores e fãs de cosméticos mostrarem seu estilo único dentro do jogo.</p>
+</div>
+  <main class="container">
+    <section class="coluna">
+      <!-- Conteúdo da Coluna Esquerda -->
+    </section>
+
+    <section class="coluna">
+      <!-- Conteúdo da Coluna Direita -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Toji. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

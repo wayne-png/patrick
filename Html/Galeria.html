@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>freefire</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    body {
+      position: relative;
+      z-index: 0;
+      background-color: black;
+      overflow-x: hidden;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-bg iframe {
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      border: none;
+      filter: blur(4px) brightness(0.4);
+    }
+
+    header, footer, section, nav, h1, p {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-shadow: 0 0 5px black;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #111a;
+      padding: 10px 20px;
+    }
+
+    .logo-counter strike{
+      height: 50px;
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .interativo-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .agente-bloco {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #111;
+    }
+
+    .agente-bloco img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .agente-bloco:hover img {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+    }
+
+    footer {
+      background-color: #111a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- vídeo de fundo -->
+  <div class="video-bg">
+    <iframe 
+      src="https://www.youtube.com/embed/c80dVYcL69E?autoplay=1&mute=1&loop=1&controls=0&playlist=c80dVYcL69E&modestbranding=1&showinfo=0&rel=0"
+
+      allow="autoplay"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="https://preview.redd.it/which-official-cs2-logo-do-you-like-better-1-or-2-v0-meakmjcylyqa1.jpg?width=358&format=pjpg&auto=webp&s=7999d040dcab80a7521b44f1d81dd840a7ef7135" width="100" height="100" alt="Logo Counter Strike" class="logo-counter strike" />
+      <h1>Counter Strike 2</h1>
+    </div>
+
+     <nav>
+      <ul>
+        <li><a href="../Index.html">Início</a></li>
+        <li><a href="../Html/Sobre.html">Sobre</a></li>
+        <li><a href="../Html/Galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="interativo-container">
+    <a href="https://tradeit.gg/blog/cs2-maps-callouts/" class="agente-bloco">
+      <img src="../Imgs/Cache.webp" alt="Brimstone">
+    </a>
+    <a href="https://tradeit.gg/blog/cs2-maps-callouts/" class="agente-bloco">
+      <img src="../Imgs/inferno.webp" alt="Viper">
+    </a>
+    <a href="https://tradeit.gg/blog/cs2-maps-callouts/" class="agente-bloco">
+      <img src="../Imgs/MIRAGE.webp" alt="Omen">
+    </a>
+    <a href="https://tradeit.gg/blog/cs2-maps-callouts/" class="agente-bloco">
+      <img src="../Imgs/Nuke.webp" alt="Astra">
+    </a>
+    <a href="https://tradeit.gg/blog/cs2-maps-callouts/" class="agente-bloco">
+      <img src="../Imgs/train.webp" alt="Harbor">
+    </a>
+  </section>
+
+  <footer>
+      <p>&copy; 2025 Toji. Todos os direitos reservados.</p>
+  <p>Este site foi feito por um fã, não á nada relacionado pela  mão da própia ValveGamEs
+</footer>
+    <p>Endereço: Caldas Novas rTYjr, RJ</p>
+    <p>Telefone: (+55) 938534944</p>
+    <p id="2025"></p>
+  </footer>
+
+</body>
+</html>
